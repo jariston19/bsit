@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(resources/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(resources/fonts/Raleway-VariableFont_wght.ttf);
+}
+
+body {
+  background: linear-gradient(0deg,
+      rgba(242, 105, 28, 0.6),
+      rgba(242, 105, 28, 0.6)),
+    url(resources/images/pexels-yan-krukau-8199562.jpg) no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.scitlogo {
+  width: clamp(5rem, 4.5rem + 2.5vw, 7.5rem);
+}
+
+
+@media screen and (min-width:320px){
+  .blogin {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .frame_login {
+    width: 97vw;
+    height: 98vh;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+    gap: 20px;
+  }
+
+  .frame_form {
+    /* width: 85vw; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .logo {
+    width: inherit;
+    text-align: center;
+  }
+
+  .welcome,
+  .container {
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-size: clamp(1rem, 0.84rem + 0.8vw, 1.8rem);
+  }
+
+  .welcome {
+    text-align: center;
+  }
+
+  .welcome_up {
+    font-weight: bold;
+    font-size: clamp(1.85rem, 1.62rem + 1.15vw, 3rem);
+    font-style: normal;
+  }
+
+  .welcome_down {
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+   
+  }
+
+  .l_field {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  }
+
+  .l_field div {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+  }
+
+  .l_field div input[type="email"],
+  .l_field div input[type="password"] {
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background: none;
+    height: 40px;
+    font-family: "Montserrat";
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+    padding: 10px;
+    color: #fff;
+    outline: none;
+  }
+
+  .remember {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 30px;
+  }
+
+  .remember,
+  .remember span {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(0.75rem, 0.713rem + 0.188vw, 0.938rem);
+    line-height: 24px;
+  }
+
+  .remember div {
+    display: flex;
+    align-items: center;
+  }
+
+  .remember a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .remember input[type="checkbox"] {
+    width: 15px;
+    margin-left: 0;
+  }
+
+  button.l_submit {
+    height: 40px;
+    background: #074766;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 41px;
+    margin-bottom: 5px;
+  }
+
+  .no_account {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(0.75rem, 0.675rem + 0.375vw, 1.125rem);
+  }
+
+  .no_account a {
+    color: #fff;
+  }
+
+}
+
+@media screen and (min-width:688px) {
+  .frame_login {
+    width: 60vw;
+    height: 58vh;
+  }
+
+  .frame_form {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .blogin {
+    justify-content: left;
+    width: 37vw;
+    background: rgba(0, 0, 0, 0.2);
+
+  }
+
+  .frame_login {
+    height: inherit;
+    width: inherit;
+    background: none;
+    justify-content: center;
+  }
+
+  .frame_form {
+    border-radius: none;
+    width: inherit;
+  }
+
+  .container {
+    width: clamp(19.438rem, 10.228rem + 14.39vw, 27.496rem);
+  }
+}
+
+@media screen and (max-width:900px) and (orientation: landscape) {
+  .frame_login {
+    flex-direction: row;
+    gap:0;
+  }
+  .frame_form,  .welcome {
+    transform: scale(90%);
+  }
+
+  .welcome_up{
+   font-size: 1.5rem;
+  }
+  .welcome_down{
+    font-size: 1rem;
+   }
+}

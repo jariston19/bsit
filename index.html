@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ADEP</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="blogin">
+      <div class="frame_login">
+        <div>
+          <div class="logo">
+            <img
+              class="scitlogo"
+              src="resources\images\SIT LOGO.png"
+              alt="scitlogo"
+            />
+          </div>
+          <div class="welcome">
+            <div class="welcome_up">WELCOME BACK!</div>
+            <div class="welcome_down">Please login to your account.</div>
+          </div>
+        </div>
+        <form class="frame_form" action="index.html" method="post">
+          <div class="container">
+            <div class="l_field">
+              <div>
+                <label for="username" class="">Email</label>
+                <input
+                  type="email"
+                  name=""
+                  value=""
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  size="30"
+                  required
+                />
+              </div>
+              <div>
+                <label for="password" class="">Password</label>
+                <input type="password" name="" value="" required />
+              </div>
+            </div>
+            <div class="remember">
+              <div><input type="checkbox" name="" id="" />Remember me</div>
+              <span><a href="">Forgot password?</a></span>
+            </div>
+            <button class="l_submit" type="submit" name="button">LOGIN</button>
+            <span class="no_account"
+              >Don't have an account? <a href="">Click here.</a></span
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
